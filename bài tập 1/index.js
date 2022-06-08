@@ -5,16 +5,17 @@ function resultEx1(n) {
         res2 = k + 1;
         if (res2 < 10){
             for (var i = res2; i < res2 + 10; i++){
-                res1 += i + " " + " ";
+                res1 += i + " " + " " ;
             }
         }else {
             for (var i = res2; i < res2 + 10; i++){
                 res1 += i +" ";
             }
         }
-        res1 += "\n" ;
+        res1 += "<br />" ;
     } 
     // console.log(res1)
+    return res1
 }
 resultEx1(100);
 

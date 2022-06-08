@@ -15,21 +15,6 @@
     // console.log(arrIdButton);
     // console.log(arrIdButton[0]);
 
-    var classButton1 = document.getElementById('ex1button').classList;
-    var classButton3 = document.getElementById('ex3button').classList;
-    var classButton2 = document.getElementById('ex2button').classList;
-    var classButton4 = document.getElementById('ex4button').classList;
-    var classButton5 = document.getElementById('ex5button').classList;
-    var classButton6 = document.getElementById('ex6button').classList;
-    var classButton7 = document.getElementById('ex7button').classList;
-    var classButton8 = document.getElementById('ex8button').classList;
-    var classButton9 = document.getElementById('ex9button').classList;
-    var classButton10 = document.getElementById('ex10button').classList;
-    // console.log(idButton1);
-
-    var arrClassButton = [classButton1, classButton2, classButton3, classButton4, classButton5, classButton6, classButton7, classButton8, classButton9, classButton10];
-    // console.log(arrIdButton);
-    // console.log(arrIdButton[0]);
 
     var idText1 = document.getElementById('ex1text').id;
     var idText2 = document.getElementById('ex2text').id;
@@ -46,7 +31,25 @@
     var arrIdText = [idText1, idText2, idText3, idText4, idText5, idText6, idText7, idText8, idText9, idText10];
     // console.log(arrIdButton);
     // console.log(arrIdButton[0]);
-    var resultInnerHTMLEx1 = resultEx1;
+   
+
+    
+    var classButton1 = document.getElementById('ex1button').classList;
+    var classButton3 = document.getElementById('ex3button').classList;
+    var classButton2 = document.getElementById('ex2button').classList;
+    var classButton4 = document.getElementById('ex4button').classList;
+    var classButton5 = document.getElementById('ex5button').classList;
+    var classButton6 = document.getElementById('ex6button').classList;
+    var classButton7 = document.getElementById('ex7button').classList;
+    var classButton8 = document.getElementById('ex8button').classList;
+    var classButton9 = document.getElementById('ex9button').classList;
+    var classButton10 = document.getElementById('ex10button').classList;
+    // console.log(idButton1);
+
+    var arrClassButton = [classButton1, classButton2, classButton3, classButton4, classButton5, classButton6, classButton7, classButton8, classButton9, classButton10];
+    // console.log(arrClassButton);
+
+    var resultInnerHTMLEx1 = resultEx1(100);
     var resultInnerHTMLEx2 = resultEx2;
     var resultInnerHTMLEx3 = resultEx3;
     var resultInnerHTMLEx4 = resultEx4;
@@ -58,8 +61,8 @@
     var resultInnerHTMLEx10 = resultEx10;
     // console.log(resultInnerHTMLEx1);
 
-    var arrResultEx1InnerHTML = [resultInnerHTMLEx1, resultInnerHTMLEx2, resultInnerHTMLEx3, resultInnerHTMLEx4, resultInnerHTMLEEx5, resultInnerHTMLEEx6, resultInnerHTMLEEx7, resultInnerHTMLEEx8, resultInnerHTMLEEx9, resultInnerHTMLEx10];
-    // console.log(arrResultEx1InnerHTML[0]);
+    var arrResultInnerHTMLEx = [resultInnerHTMLEx1, resultInnerHTMLEx2, resultInnerHTMLEx3, resultInnerHTMLEx4, resultInnerHTMLEEx5, resultInnerHTMLEEx6, resultInnerHTMLEEx7, resultInnerHTMLEEx8, resultInnerHTMLEEx9, resultInnerHTMLEx10];
+    // console.log(arrResultInnerHTMLEx[0]);
 
     function clickButton(e) {
 
@@ -84,13 +87,12 @@ function clickButtonResult(e){
 
 function findButtonActiving(e){
     for (var i = 0; i < arrIdButton.length; i++){
-        if (arrClassButton[i].classList === buttonActive){
-            document.getElementById('result').innerHTML = arrResultEx1InnerHTML[i];
+      
+        if (arrClassButton[i].contains("buttonActive")) {
+            document.getElementById('result').innerHTML = arrResultInnerHTMLEx[i];
             return;
-        } 
+        }
     }
 }
-
-
-
-
+// console.log(resultInnerHTMLEx1)
+// console.log(resultInnerHTMLEx1)

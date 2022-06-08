@@ -10,7 +10,7 @@ function resultEx2(arr) {
                     return false;
                 }
             }
-            // console.log(n, "là số nguyên tố");
+            console.log(n, "là số nguyên tố");
             return true;
         }
         testPrime(n)
