@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logoAtomSpinner">
+                    <div class="content">
+                        <div class="atom-spinner">
+                            <div class="spinner-inner">
+                                <div class="spinner-line"></div>
+                                <div class="spinner-line"></div>
+                                <div class="spinner-line"></div>
+                                <div class="spinner-circle">&#9679</div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button id="ex1button" class="ex1button buttonActive" type="button" data-target="ex1text" onclick="clickButton(event)">Bài tập 1</button>
+                    <button id="ex2button" class="ex2button" type="button" data-target="ex2text" onclick="clickButton(event)">Bài tập 2</button>
+                    <button id="ex3button" class="ex3button" type="button" data-target="ex3text" onclick="clickButton(event)">Bài tập 3</button>
+                    <button id="ex4button" class="ex4button" type="button" data-target="ex4text" onclick="clickButton(event)">Bài tập 4</button>
+                    <button id="ex5button" class="ex5button" type="button" data-target="ex5text" onclick="clickButton(event)">Bài tập 5</button>
+                    <button id="ex6button" class="ex6button" type="button" data-target="ex6text" onclick="clickButton(event)">Bài tập 6</button>
+                    <button id="ex7button" class="ex7button" type="button" data-target="ex7text" onclick="clickButton(event)">Bài tập 7</button>
+                    <button id="ex8button" class="ex8button" type="button" data-target="ex8text" onclick="clickButton(event)">Bài tập 8</button>
+                    <button id="ex9button" class="ex9button" type="button" data-target="ex9text" onclick="clickButton(event)">Bài tập 9</button>
+                    <button id="ex10button" class="ex10button" type="button" data-target="ex10text" onclick="clickButton(event)">Bài tập 10</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main">
+                <div class="question">
+                    <h2 class="title">Question</h2>
+                    <div id="ex1text" class="ex1text textActive">
+                        <h2>In 1 bảng số từ 1 đến 100 thỏa mãn điều kiện </h2>
+                        <ul>
+                            <li>Bảng số gồm 10 hàng 10 cột</li>
+                            <li>Các giá trị trong hàng là liên tiếp nhau</li>
+                            <li>Các giá trị trong cột hơn kém nhau 10</li>
+                        </ul>
+                    </div>
+                    <div id="ex2text" class="ex2text">
+                        <h2>Viết function nhận vào tham số là một mảng số nguyên, tìm và in ra các số nguyên tố trong mảng.</h2>
+                    </div>
+                    <div id="ex3text" class="ex3text">
+                        <h2>Viết function nhận vào tham số n, tính S=(2+3+4...+n)+2n</h2>
+                    </div>
+                    <div id="ex4text" class="ex4text">
+                        <h2>Viết function nhận vào tham số n, tính số lượng ước số của n. Vd: n = 8 => Ước số của 8 là : 8,4,2,1</h2>
+                    </div>
+                    <div id="ex5text" class="ex5text">
+                        <h2>Viết chương trình tìm số đảo ngược của 1 số nguyên dương n nhập từ bàn phím.Vd :1234 => 4321 (Gợi ý: duyệt chuỗi giống như duyệt mảng)</h2>
+                    </div>
+                    <div id="ex6text" class="ex6text">
+                        <h2>Tìm x nguyên dương lớn nhất, biết 1+2+3+...+x ≤100</h2>
+                    </div>
+                    <div id="ex7text" class="ex7text">
+                        <h2>Viết function nhận vào số n, in ra bảng cửu chương tương ứng với số đó.</h2>
+                    </div>
+                    <div id="ex8text" class="ex8text">
+                        <h2>Viết hàm chia bài cho 4 người chơi. Cho 4 mảng, đại diện cho 4 người chơi. var players = [ [], [], [], [] ]. Và 1 mảng bài: var cards = ["4K", "KH", "5C", "KA", "QH", "KD", "2H", "10S", "AS", "7H", "9K", "10D"]. Yêu cầu viết code để chia cho mỗi player 3 lá theo luật, chia lần lượt mỗi người 1 lá.</h2>
+                    </div>
+                    <div id="ex9text" class="ex9text">
+                        <h2>Vừa gà vừa chó, bó lại cho tròn, 36 con, 100 chân chẵn</h2>
+                        <h2>viết chương trình nhập vào m là tổng số chó và gà, n là tổng số chân. Tìm số gà, số chó</h2>
+                    </div>
+                    <div id="ex10text" class="ex10text">
+                        <h2> Nhập vào số giờ và số phút => góc lệch giữa kim giờ và kim phút. Vd 6:10</h2>
+                    </div>
+                </div>
+                <div class="result">
+                    <h2>Result</h2>
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+           <div class="buttonFooter">
+            <button id="buttonResult" onchange="clickButtonResult(event)">Click here to show result</button>
+           </div>
+        </div>
+    </footer>
+</body>
+<script src="./bài tập 1/index.js"></script>
+<script src="./bài tập 2/index.js"></script>
+<script src="./bài tập 3/index.js"></script>
+<script src="./bài tập 4/index.js"></script>
+<script src="./bài tập 5/index.js"></script>
+<script src="./bài tập 6/index.js"></script>
+<script src="./bài tập 7/index.js"></script>
+<script src="./bài tập 8/index.js"></script>
+<script src="./bài tập 9/index.js"></script>
+<script src="./bài tập 10/index.js"></script>
+<script src="./index.js"></script>
+</html>
