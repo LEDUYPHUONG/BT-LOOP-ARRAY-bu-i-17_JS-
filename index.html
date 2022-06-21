@@ -45,40 +45,63 @@
                 <div class="question">
                     <h2 class="title">Question</h2>
                     <div id="ex1text" class="ex1text textActive">
-                        <h2>In 1 bảng số từ 1 đến 100 thỏa mãn điều kiện </h2>
+                        <h2>In 1 bảng số từ 1 đến n (100) thỏa mãn điều kiện </h2>
                         <ul>
                             <li>Bảng số gồm 10 hàng 10 cột</li>
                             <li>Các giá trị trong hàng là liên tiếp nhau</li>
                             <li>Các giá trị trong cột hơn kém nhau 10</li>
                         </ul>
+                        <h2>Nhập số n (100 hoặc số nguyên dương bất kì) vào ô bên dưới để có được 1 bảng thỏa điều kiện bên trên</h2>
+                        <input id="inputNumberEx1" type="number" placeholder="Nhập số nguyên dương">
                     </div>
                     <div id="ex2text" class="ex2text">
                         <h2>Viết function nhận vào tham số là một mảng số nguyên, tìm và in ra các số nguyên tố trong mảng.</h2>
+                        <h2>Nhập vào một dãy số có dạng number1, number2, ... vào ô bên dưới</h2>
+                        <input id="inputNumberEx2" type="text" placeholder="number1, number2,...">
                     </div>
                     <div id="ex3text" class="ex3text">
                         <h2>Viết function nhận vào tham số n, tính S=(2+3+4...+n)+2n</h2>
+                        <h2>Nhập giá trị n (nguyên dương) vào ô bên dưới để tìm tổng S = (2+3+4...+n)+2n</h2>
+                        <input id="inputNumberEx3" type="number" placeholder="Số dương nha">
                     </div>
                     <div id="ex4text" class="ex4text">
-                        <h2>Viết function nhận vào tham số n, tính số lượng ước số của n. Vd: n = 8 => Ước số của 8 là : 8,4,2,1</h2>
+                        <h2>Viết function nhận vào tham số n, tính số lượng ước số của n.</h2>
+                        <h2>Nhập tham số n vào ô bên dưới để biết số lượng ước số của nó</h2>
+                        <input id="inputNumberEx4" type="number" placeholder="Number">
                     </div>
                     <div id="ex5text" class="ex5text">
                         <h2>Viết chương trình tìm số đảo ngược của 1 số nguyên dương n nhập từ bàn phím.Vd :1234 => 4321 (Gợi ý: duyệt chuỗi giống như duyệt mảng)</h2>
+                        <h2>Nhập một số bất kì vào ô bên dưới để có một số đảo ngược lại</h2>
+                        <input id="inputNumberEx5" type="number" placeholder="Number">
                     </div>
                     <div id="ex6text" class="ex6text">
-                        <h2>Tìm x nguyên dương lớn nhất, biết 1+2+3+...+x ≤100</h2>
+                        <h2>Tìm x nguyên dương lớn nhất, biết 1+2+3+...+x ≤ NumberLimit (Ví dụ: NumberLimit = 100 )</h2>
+                        <h2>Nhập số giới hạn NumberLimit (Sôs nguyên dương bất kì) vào ô bên dưới để biết giá trị của x thỏa 1+2+3+...+x ≤ NumberLimit </h2>
+                        <input id="inputNumberEx6" type="number" placeholder="Number limit">
                     </div>
                     <div id="ex7text" class="ex7text">
                         <h2>Viết function nhận vào số n, in ra bảng cửu chương tương ứng với số đó.</h2>
+                        <h2>Bạn đang tìm bảng cửu chương của số nào, hãy nhập số đó vào ô bên dưới</h2>
+                        <input id="inputNumberEx7" type="number" placeholder="Number">
                     </div>
                     <div id="ex8text" class="ex8text">
                         <h2>Viết hàm chia bài cho 4 người chơi. Cho 4 mảng, đại diện cho 4 người chơi. var players = [ [], [], [], [] ]. Và 1 mảng bài: var cards = ["4K", "KH", "5C", "KA", "QH", "KD", "2H", "10S", "AS", "7H", "9K", "10D"]. Yêu cầu viết code để chia cho mỗi player 3 lá theo luật, chia lần lượt mỗi người 1 lá.</h2>
+                        <h2>Hãy nhập vào 1 chuổi chất kì vào ô bên dưới (Ví dụ: 4K, KH, 5C, KA, QH, KD, 2H, 10S,AS, 7H, 9K, 10D), ứng dụng sẽ lần lượt chia cho các player theo thứ tự từ 1->4</h2>
+                        <input id="inputNumberEx8" type="text" placeholder="4K, KH, 5C, KA,...">
                     </div>
                     <div id="ex9text" class="ex9text">
                         <h2>Vừa gà vừa chó, bó lại cho tròn, 36 con, 100 chân chẵn</h2>
                         <h2>viết chương trình nhập vào m là tổng số chó và gà, n là tổng số chân. Tìm số gà, số chó</h2>
+                        <h2>Nhập vào ô bên dưới tổng số gà và chó</h2>
+                        <input id="inputNumberEx9a" type="number" placeholder="Tổng gà và chó">
+                        <h2>Nhập vào ô bên dưới tổng số chân</h2>
+                        <input id="inputNumberEx9b" type="number" placeholder="Tổng số chân">
+                        <h2>Lưu ý: kết quả ra "undefined" nghĩa là vô nghiệm</h2>
                     </div>
                     <div id="ex10text" class="ex10text">
                         <h2> Nhập vào số giờ và số phút => góc lệch giữa kim giờ và kim phút. Vd 6:10</h2>
+                        <h2>Nhập vào ô bên dưới thời gian muốn biết góc lệch giữa kim giờ và kim phút</h2>
+                        <input id="inputNumberEx10" type="text" placeholder="Hous : minute">
                     </div>
                 </div>
                 <div class="result">
@@ -96,15 +119,5 @@
         </div>
     </footer>
 </body>
-<script src="./bài tập 1/index.js"></script>
-<script src="./bài tập 2/index.js"></script>
-<script src="./bài tập 3/index.js"></script>
-<script src="./bài tập 4/index.js"></script>
-<script src="./bài tập 5/index.js"></script>
-<script src="./bài tập 6/index.js"></script>
-<script src="./bài tập 7/index.js"></script>
-<script src="./bài tập 8/index.js"></script>
-<script src="./bài tập 9/index.js"></script>
-<script src="./bài tập 10/index.js"></script>
 <script src="./index.js"></script>
 </html>

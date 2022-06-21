@@ -130,10 +130,11 @@ main .result {
     border-radius: 5px;
 }
 
-.main .result {
+.main .result{
     text-align: center;
     border-left: 5px solid yellow;
 }
+
 
 .main .question .title {
     text-align: center;
@@ -142,10 +143,14 @@ main .result {
 .main .ex1text, .main .ex2text, .main .ex3text, .main .ex4text, .main .ex5text, .main .ex6text, .main .ex7text, .main .ex8text, .main .ex9text, .main .ex10text {
     display: none;
 }
-
-.main form {
-    text-align: center;
+main input {
+    font-size: 40px;
+    height: 50px;
+    width: 97%;
+    
 }
+
+
 /* footer */
 
 footer button{
@@ -156,6 +161,8 @@ footer button:hover{
     width: 400px;
     box-shadow: 0px 0px 21px lightblue;
 }
+
+
 
 .buttonFooter {
     text-align: center;
@@ -172,9 +179,6 @@ footer button:hover{
 .main .textActive{
     display: block;
 }
-
-
-
 
 
 
